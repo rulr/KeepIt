@@ -8,7 +8,10 @@
           <div class="container">
       		{{ block "content" . }}{{ end }}
           </div>
-		   </main>
+          <div class="post-toc">
+              {{ partial "toc.html" . }}
+          </div>
+		 </main>
       {{ partial "footer.html" . }}
      </div>
   </body>
